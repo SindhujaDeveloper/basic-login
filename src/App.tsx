@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { RouterProvider } from 'react-router-dom'
+import RouterData from 'routes/appRoutes'
+import Footer from 'layout/footer'
+import Header from 'layout/header'
+import 'assets/stylesheets/common.scss'
 
-function App() {
+const App: React.FC = () => {
+  const router = RouterData()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className='container'>
+        <RouterProvider router={router} />
+      </div>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
