@@ -8,9 +8,9 @@ import 'assets/stylesheets/common.scss'
 const App: React.FC = () => {
   const router = RouterData()
   return (
-    <div className="App">
+    <div>
       <Header />
-      <div className='container'>
+      <div className='class-container'>
         <RouterProvider router={router} />
       </div>
       <Footer />

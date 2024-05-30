@@ -1,0 +1,57 @@
+.menu-title,
+.card-body,
+.card-header {
+  text-align: center;
+}
+
+.menu-container {
+  margin-top: 20px;
+}
+
+.menu-title {
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.add-btn {
+  width: 2.5vw;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.remove-btn {
+  width: 2.5vw;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.count-btn {
+  border-radius: 0 !important;
+}
+
+.count-btn-input {
+  width: 3vw;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+}

@@ -1,4 +1,11 @@
-.container {
-  height: calc(100vh - 6vw);
+body {
+  background-color: gray;
   overflow-x: hidden;
+  width: 100vw;
+}
+
+.container {
+  height: calc(100vh - 8vw);
+  overflow-x: hidden;
+  // background-color: rgb(250, 224, 224);
 }
