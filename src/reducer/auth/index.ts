@@ -1,23 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { type IActionWithPayload } from 'types'
+import type { IAuthReducer, IActionWithPayload } from 'types'
 
-const initialState: any = {
+const initialState: IAuthReducer = {
   isFetching: false,
-  error: ''
+  error: '',
+  token: ''
 }
 
 const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    authLoginRequest: (state: any, action: IActionWithPayload<any>) => {
+    authLoginRequest: (state: IAuthReducer, action: IActionWithPayload<any>) => {
       state.isFetching = true
       state.error = ''
     },
-    authLoginResponse: (state: any, action: IActionWithPayload<any>) => {
+    authLoginResponse: (state: IAuthReducer, action: IActionWithPayload<any>) => {
       state.isFetching = false
     },
-    authLoginFailure: (state: any, action: IActionWithPayload<any>) => {
+    authLoginFailure: (state: IAuthReducer, action: IActionWithPayload<any>) => {
       state.isFetching = false
       state.error = action.payload.error
     }

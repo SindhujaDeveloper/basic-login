@@ -1,10 +1,23 @@
 .footer-container {
   background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #FFF;
+  height: 340px;
+}
 
-  h5 {
-    color: #FFFFFF;
-  }
+.follow-col{
+  text-align: center;
+}
+
+.company-info-col{
+  text-align: justify;
+}
+
+.footer-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.copyright {
+  padding-top: 20px;
+  text-align: center;
 }

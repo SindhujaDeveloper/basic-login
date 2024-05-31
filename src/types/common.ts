@@ -1,4 +1,6 @@
 import type { Method } from 'axios'
+import { IMenuReducer } from './menu'
+import { IAuthReducer } from './auth'
 
 export interface IActionWithPayload<T> {
   payload: T
@@ -19,4 +21,9 @@ export interface IDefaultHeader {
 }
 export interface IPromisePayload<T> {
   data?: T
+}
+
+export interface RootState {
+  auth: IAuthReducer;
+  menu: IMenuReducer;
 }
