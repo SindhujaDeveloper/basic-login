@@ -2,20 +2,17 @@ import { createSlice } from '@reduxjs/toolkit'
 import { type IActionWithPayload } from 'types'
 import type { IMenuItem, IMenuReducer } from 'types/menu'
 
-import tata from '../../assets/images/logo192.png'
+import methuVada from '../../assets/images/methu_vada.jpeg'
+import masalVada from '../../assets/images/masal_vada.jpeg'
+import cauliflowerChilly from '../../assets/images/cauliflower_chilly.jpeg'
+import masalPonda from '../../assets/images/masal_ponda.jpeg'
 
 const initialState: IMenuReducer = {
   menuList: [
-    { name: 'tata', count: 0, img: tata },
-    { name: 'example1', count: 0, img: tata },
-    { name: 'example2', count: 0, img: tata },
-    { name: 'example3', count: 0, img: tata },
-    { name: 'example4', count: 0, img: tata },
-    { name: 'example5', count: 0, img: tata },
-    { name: 'example6', count: 0, img: tata },
-    { name: 'example7', count: 0, img: tata },
-    { name: 'example8', count: 0, img: tata },
-    { name: 'example9', count: 0, img: tata }
+    { name: 'Methu Vada', count: 0, img: methuVada, price: 'Rs.5 per item' },
+    { name: 'Masal Vada', count: 0, img: masalVada, price: 'Rs.5 per item' },
+    { name: 'Masal Ponda', count: 0, img: masalPonda, price: 'Rs.5 per item' },
+    { name: 'Cauliflower Chilly', count: 0, img: cauliflowerChilly, price: 'Rs.30 - 100g' }
   ]
 }
 
