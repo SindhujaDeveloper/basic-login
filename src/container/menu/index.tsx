@@ -36,7 +36,7 @@ export const MenuList: React.FC = () => {
                   {it?.count < 10
                     ? (
                       <Button onClick={() => { handleClick(it.name, it.count + 10, it.img) }} variant='light' className='add-to-cart'>Add to cart</Button>
-                    )
+                      )
                     : (
                       <>
                         <Button className='remove-btn' onClick={() => { handleClick(it.name, it.count === 10 ? it.count - 10 : it.count - 1, it.img) }} variant='light'>-</Button>
@@ -51,7 +51,7 @@ export const MenuList: React.FC = () => {
                         </Button>
                         <Button className='add-btn' onClick={() => { handleClick(it.name, it.count + 1, it.img) }} variant='light'>+</Button>
                       </>
-                    )}
+                      )}
                 </Card.Footer>
               </Card>
             </Col>
