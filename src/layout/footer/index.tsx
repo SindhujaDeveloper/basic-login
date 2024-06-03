@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             <h6>Addess: 123 React Street, JavaScript City</h6>
           </Col>
           <Col>
-            <h4>Location:</h4>
+            <h4 className='ps-5 pb-2'>Location</h4>
             <a
               href='https://www.google.com/maps/place/NSP+Foods/@11.0534664,77.0400058,15z/data=!4m2!3m1!1s0x0:0x1a13c28ba093fbba?sa=X&ved=1t:2428&ictx=111'
               rel='noreferrer'
@@ -27,13 +27,13 @@ const Footer: React.FC = () => {
               <img src={googleMap} width={300} height={180} />
             </a>
           </Col>
-          <Col className='text-center'>
-            <h5 className='pb-2'>Follow us on</h5>
-            <img src={logo} width={'30px'} alt="Logo 1" />
-            <img src={logo} width={'30px'} alt="Logo 2" />
+          <Col className='text-center w-100'>
+            <h5 className='ps-5 pb-2'>Follow us on</h5>
+            <img src={logo} width={'70px'} alt="Logo 1" className='social-media-1' />
+            <img src={logo} width={'70px'} alt="Logo 2" className='social-media-2' />
           </Col>
           <Col>
-            <h5 className='pb-2'>Policy</h5>
+            <h5 className='ps-5 pb-2'>Policy</h5>
             <p>Orders should be placed before <b>1hour</b></p>
           </Col>
         </Row>

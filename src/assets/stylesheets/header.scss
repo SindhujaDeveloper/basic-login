@@ -1,8 +1,24 @@
-.header-container {
-  background-color: hsl(0, 0%, 0%);
-  // height: 100px;
-  // h1 {
-  //   color: #FFFFFF;
-  //   text-align: center;
-  // }
+// .header-container {
+//   // background-color: hsl(0, 0%, 0%);
+//   background-color: #2a674a;
+
+//   // height: 100px;
+//   // h1 {
+//   //   color: #FFFFFF;
+//   //   text-align: center;
+//   // }
+// }
+
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light.sticky-top {
+  background-color: #2a674a !important;
+  color: #FFFFFF
+}
+
+.nav-title {
+  margin-left: 350px;
+  color: #FFFFFF
+}
+
+.nav-link {
+  color: #FFFFFF !important;
 }

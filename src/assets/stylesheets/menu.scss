@@ -4,12 +4,22 @@
   text-align: center;
 }
 
+.card-header,
+.card-footer {
+  background-color: rgb(101, 150, 150) !important;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .menu-container {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .menu-title {
   margin-bottom: 20px;
+  color: #FFFFFF;
 }
 
 .card-footer {
@@ -18,24 +28,33 @@
   justify-content: flex-end;
 }
 
-.menu-row{
+.menu-row {
   padding-bottom: 20px;
   padding-bottom: 40px;
 }
 
-.menu-col{
+.menu-col {
   padding-bottom: 20px;
 }
+
 .add-btn {
-  width: 2.5vw;
+  width: 35px;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+  color: rgb(101, 150, 150) !important;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-size: 12px !important;
 }
 
 .remove-btn {
-  width: 2.5vw;
+  width: 35px;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+  color: rgb(101, 150, 150) !important;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-size: 12px !important;
 }
 
 .count-btn {
@@ -43,7 +62,7 @@
 }
 
 .count-btn-input {
-  width: 3vw;
+  width: 40px;
   border: none;
   background: transparent;
   text-align: center;
@@ -62,4 +81,19 @@ input[type=number]::-webkit-outer-spin-button {
 input:focus {
   outline-style: none;
   box-shadow: none;
+}
+
+.add-to-cart {
+  height: 38px;
+  color: rgb(101, 150, 150) !important;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-size: 12px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 300px;
+    margin-left: 30px;
+  }
 }

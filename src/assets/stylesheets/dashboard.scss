@@ -5,11 +5,14 @@
 //   align-items: center;
 // }
 
+.dashboard-container {
+  background-color: darkseagreen;
+}
+
 .dashboard-title {
   text-align: center;
   padding-bottom: 20px;
 }
-
 
 .whatsapp-image-container {
   position: fixed;
@@ -33,6 +36,13 @@
   }
 }
 
+.whatsapp-image-container {
+  span {
+    cursor: pointer;
+    animation: zoomInOut 1s infinite;
+  }
+}
+
 .whatsapp-image {
   cursor: pointer;
   border-radius: 50%;
@@ -41,6 +51,7 @@
 }
 
 .marquee {
+  padding-top: 10px;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -62,6 +73,7 @@
   0% {
     transform: translate(0, 0);
   }
+
   100% {
     transform: translate(-100%, 0);
   }

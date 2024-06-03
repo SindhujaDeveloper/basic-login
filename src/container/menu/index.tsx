@@ -33,25 +33,25 @@ export const MenuList: React.FC = () => {
                   <img src={it.img} alt={`${it.name}`} />
                 </Card.Body>
                 <Card.Footer>
-                  {it?.count < 1
+                  {it?.count < 10
                     ? (
-                        <Button onClick={() => { handleClick(it.name, it.count + 10, it.img) }}>Add to cart</Button>
-                      )
+                      <Button onClick={() => { handleClick(it.name, it.count + 10, it.img) }} variant='light' className='add-to-cart'>Add to cart</Button>
+                    )
                     : (
-                        <>
-                          <Button className='remove-btn' onClick={() => { handleClick(it.name, it.count - 1, it.img) }}>-</Button>
-                          <Button variant='secondary' className='count-btn'>
-                            <input
-                              className='count-btn-input'
-                              type='number'
-                              name={it.name}
-                              value={it.count}
-                              onChange={(e) => { handleChange(e, it.img) }}
-                            />
-                          </Button>
-                          <Button className='add-btn' onClick={() => { handleClick(it.name, it.count + 1, it.img) }}>+</Button>
-                        </>
-                      )}
+                      <>
+                        <Button className='remove-btn' onClick={() => { handleClick(it.name, it.count === 10 ? it.count - 10 : it.count - 1, it.img) }} variant='light'>-</Button>
+                        <Button variant='secondary' className='count-btn'>
+                          <input
+                            className='count-btn-input'
+                            type='number'
+                            name={it.name}
+                            value={it.count}
+                            onChange={(e) => { handleChange(e, it.img) }}
+                          />
+                        </Button>
+                        <Button className='add-btn' onClick={() => { handleClick(it.name, it.count + 1, it.img) }} variant='light'>+</Button>
+                      </>
+                    )}
                 </Card.Footer>
               </Card>
             </Col>
