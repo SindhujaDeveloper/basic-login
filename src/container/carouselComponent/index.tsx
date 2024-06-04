@@ -1,33 +1,27 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import logo from '../../assets/images/logo192.png'
+
+import banner1 from '../../assets/images/banner.png'
+import banner from '../../assets/images/banner_1.png'
 
 import 'assets/stylesheets/carouselComponent.scss'
 
 const CarouselComponent: React.FC = () => {
   return (
     <Carousel data-bs-theme="dark">
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1000} className='banner'>
         <img
-          className="d-block w-100 carousel-container"
-          src={logo}
+          className="d-block carousel-container"
+          src={banner}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={1000} className='banner-1'>
         <img
-          className="d-block w-100 carousel-container"
-          src={logo}
+          className="d-block carousel-container"
+          src={banner1}
           alt="Second slide"
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
-// import logo from '../../assets/images/logo192.png'
+import logo from '../../assets/images/logo.png'
 import call from '../../assets/images/call.jpg'
 
 import 'assets/stylesheets/header.scss'
@@ -10,7 +10,10 @@ const Header: React.FC = () => {
     <div className='header-container'>
       <Navbar expand="lg" className="bg-body-tertiary sticky-top" data-bs-theme="dark" sticky='top'>
         <Navbar.Brand href="#" className='ps-3'>
-          <h1>NSP FOODS </h1>
+          <div className='logo'>
+            <img src={logo} width={60} height={60} />
+            <h1 className='ps-3'>NSP FOODS </h1>
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         {/* <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">

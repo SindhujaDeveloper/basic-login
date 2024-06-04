@@ -10,7 +10,7 @@
 // }
 
 nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light.sticky-top {
-  background-color: #2a674a !important;
+  background-color: #006769 !important;
   color: #FFFFFF
 }
 
@@ -21,4 +21,9 @@ nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light.sticky-top {
 
 .nav-link {
   color: #FFFFFF !important;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
 }

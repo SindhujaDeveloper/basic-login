@@ -1,7 +1,29 @@
-.carousel-container{
+.carousel-container {
   height: 35vw;
 }
 
-.carousel{
-  background: blanchedalmond;
+.carousel {
+  background: #E6FF94;
+}
+
+.banner-1 {
+  padding-left: 12vw
+}
+
+.banner {
+  padding-left: 30vw
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-container {
+    height: 200px;
+  }
+
+  .banner-1 {
+    padding-left: 0px;
+  }
+
+  .banner {
+    padding-left: 60px;
+  }
 }

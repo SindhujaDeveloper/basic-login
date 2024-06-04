@@ -6,6 +6,7 @@ import methuVada from '../../assets/images/methu_vada.jpeg'
 import masalVada from '../../assets/images/masal_vada.jpeg'
 import cauliflowerChilly from '../../assets/images/cauliflower_chilly.jpeg'
 import masalPonda from '../../assets/images/masal_ponda.jpeg'
+// import logo from '../../assets/images/logo192.png'
 
 const initialState: IMenuReducer = {
   menuList: [
@@ -13,6 +14,10 @@ const initialState: IMenuReducer = {
     { name: 'Masal Vada', count: 0, img: masalVada, price: 'Rs.5 per item' },
     { name: 'Masal Ponda', count: 0, img: masalPonda, price: 'Rs.5 per item' },
     { name: 'Cauliflower Chilly', count: 0, img: cauliflowerChilly, price: 'Rs.30 - 100g' }
+    // { name: 'Logo', count: 0, img: logo, price: '0' },
+    // { name: 'Logo', count: 0, img: logo, price: '0' },
+    // { name: 'Logo', count: 0, img: logo, price: '0' },
+    // { name: 'Logo', count: 0, img: logo, price: '0' }
   ]
 }
 
