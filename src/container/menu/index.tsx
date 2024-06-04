@@ -18,6 +18,7 @@ export const MenuList: React.FC = () => {
     dispatch(setMenuCount({ name, count, img, price }))
   }
 
+  console.log(menuList, "menu")
   return (
     <div className='container menu-container'>
       <h1 className='menu-title'>Menu</h1>
