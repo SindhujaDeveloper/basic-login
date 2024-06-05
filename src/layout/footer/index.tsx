@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   return (
     <div className='footer-container'>
       <Container>
-        <h5 className='footer-title'>Contact Us</h5>
+        <h5 className='footer-title'>CONTACT US</h5>
         <Row>
           <Col xs={12} md={6} lg={3} className='company-info-col'>
             <h5>Company Info</h5>

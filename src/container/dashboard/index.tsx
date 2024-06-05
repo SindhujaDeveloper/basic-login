@@ -22,9 +22,9 @@ const Dashboard: React.FC = () => {
       </div>
       <MenuList />
       <ReactWhatsapp number={'+918098949366'} message={message.length > 0 ? `${msgResult}\n\nWant to order these products` : 'Hi,want to know more about your products?'} element={'div'} className='whatsapp'>
-        <span title='Whatsapp us'>
+        <span title={`${message.length > 0 ? 'Click to place order' : 'Whatsapp us'} `}>
           <div className="whatsapp-image-container">
-            <span style={{ paddingRight: '10px', color: '#27d045', fontWeight: 'bold', fontSize: '18px', textTransform: 'uppercase' }}>Whatsapp Us</span>
+            <span style={{ paddingRight: '10px', color: '#27d045', fontWeight: 'bold', fontSize: '18px', textTransform: 'uppercase' }}>{message.length > 0 ? 'Click to place order' : 'Whatsapp us'}</span>
             <img src={whatsapp} width={60} className='whatsapp-image' />
           </div>
         </span>
