@@ -16,18 +16,18 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className='dashboard-container'>
-      <CarouselComponent />
       <div className="marquee">
-        <h5>{'ORDERS SHOULD BE PLACED BEFORE 1HOUR'}</h5>
+        <h5>ORDERS SHOULD BE PLACED BEFORE 1 HOUR</h5>
       </div>
+      <CarouselComponent />
       <MenuList />
-      <ReactWhatsapp number={'+918098949366'} message={message.length > 0 ? `${msgResult}\n\nWant to order these products` : 'Hi,want to know more about your products?'} element={'div'} className='whatsapp'>
-        <span title={`${message.length > 0 ? 'Click to place order' : 'Whatsapp us'} `}>
-          <div className="whatsapp-image-container">
-            <span style={{ paddingRight: '10px', color: '#27d045', fontWeight: 'bold', fontSize: '18px', textTransform: 'uppercase' }}>{message.length > 0 ? 'Click to place order' : 'Whatsapp us'}</span>
-            <img src={whatsapp} width={60} className='whatsapp-image' />
-          </div>
-        </span>
+      <ReactWhatsapp number={'+917868049366'} message={message.length > 0 ? `${msgResult}\n\nWant to order these products` : 'Hi, want to know more about your products?'} element={'div'} className='whatsapp'>
+        <div className="whatsapp-image-container">
+          <span className="whatsapp-label">
+            {message.length > 0 ? 'Click to place order' : 'Whatsapp us'}
+          </span>
+          <img src={whatsapp} width={60} height={60} className='whatsapp-image' alt="WhatsApp" />
+        </div>
       </ReactWhatsapp>
     </div>
   )

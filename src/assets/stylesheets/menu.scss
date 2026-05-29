@@ -1,100 +1,148 @@
-.menu-title,
-.card-body,
-.card-header {
-  text-align: center;
-}
-
-.card-header,
-.card-footer {
-  background-color: #006769 !important;
-  color: #FFFFFF !important;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-}
-
 .menu-container {
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .menu-title {
-  margin-bottom: 20px;
-  color: #006769;
-  padding-top: 20px;
-}
-
-.card-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 2.5rem;
 }
 
 .menu-row {
-  padding-bottom: 20px;
-  padding-bottom: 40px;
+  justify-content: center;
 }
 
 .menu-col {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.add-btn {
-  width: 35px;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  color: #006769 !important;
-  text-transform: uppercase;
-  font-weight: bold !important;
-  font-size: 12px !important;
+.card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  background-color: #FFFFFF;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
 }
 
-.remove-btn {
-  width: 35px;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  color: #006769 !important;
+.card-header {
+  background-color: var(--primary-color) !important;
+  color: var(--text-light) !important;
   text-transform: uppercase;
-  font-weight: bold !important;
-  font-size: 12px !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 15px;
+  border-bottom: none;
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+  
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+}
+
+.card-footer {
+  background-color: transparent !important;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart {
+  width: 100%;
+  height: 44px;
+  color: var(--primary-color) !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  border-radius: 30px;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light) !important;
+  }
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.remove-btn, .add-btn {
+  width: 44px;
+  height: 44px;
+  border: none !important;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    background-color: rgba(0, 103, 105, 0.1) !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
 }
 
 .count-btn {
-  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .count-btn-input {
-  width: 40px;
+  width: 50px;
   border: none;
   background: transparent;
   text-align: center;
-  color: #FFFFFF;
-  font-weight: bold;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 16px;
   padding: 0;
   margin: 0;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-input:focus {
-  outline-style: none;
-  box-shadow: none;
-}
-
-.add-to-cart {
-  height: 38px;
-  color: #006769 !important;
-  text-transform: uppercase;
-  font-weight: bold !important;
-  font-size: 12px !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .card {
-    width: 300px;
-    margin-left: 30px;
-  }
 }

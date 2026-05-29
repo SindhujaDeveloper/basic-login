@@ -14,6 +14,47 @@
   padding-left: 30vw
 }
 
+.hero-banner {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  color: var(--text-light);
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 103, 105, 0.2);
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+  }
+
+  .hero-btn {
+    color: var(--primary-color);
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 12px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .carousel-container {
     height: 200px;

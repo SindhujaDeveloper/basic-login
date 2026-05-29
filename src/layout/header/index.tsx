@@ -11,21 +11,19 @@ const Header: React.FC = () => {
       <Navbar expand="lg" className="bg-body-tertiary sticky-top" data-bs-theme="dark" sticky='top'>
         <Navbar.Brand href="#" className='ps-3'>
           <div className='logo'>
-            <img src={logo} width={60} height={60} />
-            <h1 className='ps-3'>NSP FOODS </h1>
+            <img src={logo} width={50} height={50} alt="Logo" />
+            <h1>NSP FOODS</h1>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        {/* <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-          <Nav className="auto align-items-center nav-title ">
-            <h1>NSP FOODS </h1>
-          </Nav>
-        </Navbar.Collapse> */}
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end pe-4">
           <Nav className="auto align-items-center">
-            <Nav.Link href="tel:+917868049366">
-              <span>To Order</span> <span title='Call - 7868049366'><img src={call} width={'30px'} style={{ borderRadius: '50%', backgroundColor: '#FFFFFF' }} /></span>
-            </Nav.Link>
+            <a href="tel:+917868049366" className="order-btn-link">
+              <div className="order-btn" title='Call - 7868049366'>
+                <span>Order Now</span>
+                <img src={call} width={'26px'} alt="Call" />
+              </div>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

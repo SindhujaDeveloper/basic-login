@@ -1,12 +1,5 @@
-// .dashboard-container {
-//   height: calc(100vh - 1vw);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .dashboard-container {
-  background-color: #FFFFFF;
+  background-color: var(--bg-color);
 }
 
 .dashboard-title {
@@ -16,65 +9,82 @@
 
 .whatsapp-image-container {
   position: fixed;
-  bottom: 3vw;
-  right: 1vw;
+  bottom: 30px;
+  right: 30px;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 999;
 }
 
 @keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.08);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
 
 .whatsapp-image-container {
   span {
     cursor: pointer;
-    animation: zoomInOut 1s infinite;
+  }
+}
+
+.whatsapp-label {
+  background-color: #FFFFFF;
+  color: var(--accent-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none; // Show on hover or larger screens
+  white-space: nowrap;
+
+  @media (min-width: 768px) {
+    display: block;
   }
 }
 
 .whatsapp-image {
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: -1px -1px 6px 6px #b5d5bb;
-  animation: zoomInOut 1s infinite;
+  box-shadow: 0 6px 15px rgba(39, 208, 69, 0.4);
+  animation: zoomInOut 2s infinite ease-in-out;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    animation: none;
+  }
 }
 
 .marquee {
-  padding-top: 10px;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
+  background-color: var(--primary-light);
+  color: var(--text-light);
+  padding: 10px 0;
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .marquee h5 {
   display: inline-block;
-  padding-left: 100%;
-  animation: marquee 10s linear infinite;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 70%;
+  animation: marquee 15s linear infinite;
 }
 
 .marquee2 h5 {
-  animation-delay: 2.5s;
+  animation-delay: 7.5s;
 }
 
 @keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(-100%, 0);
-  }
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
 }

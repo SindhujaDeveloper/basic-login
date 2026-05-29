@@ -1,29 +1,19 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
-
-// import banner1 from '../../assets/images/banner.png'
-// import banner from '../../assets/images/banner_1.png'
+import { Container, Button } from 'react-bootstrap'
 
 import 'assets/stylesheets/carouselComponent.scss'
 
 const CarouselComponent: React.FC = () => {
   return (
-    <Carousel data-bs-theme="dark">
-      <Carousel.Item interval={1000} className='banner'>
-{/*         <img
-          className="d-block carousel-container"
-          src={banner}
-          alt="First slide"
-        /> */}
-      </Carousel.Item>
-      <Carousel.Item interval={1000} className='banner-1'>
-{/*         <img
-          className="d-block carousel-container"
-          src={banner1}
-          alt="Second slide"
-        /> */}
-      </Carousel.Item>
-    </Carousel>
+    <div className="hero-banner">
+      <Container className="hero-content">
+        <h2>Welcome to NSP FOODS</h2>
+        <p>Authentic South Indian Snacks Delivered to You!</p>
+        <Button variant="light" size="lg" className="hero-btn" onClick={() => { window.scrollTo({ top: document.querySelector('.menu-container')?.getBoundingClientRect().top ?? 500, behavior: 'smooth' }) }}>
+          View Menu
+        </Button>
+      </Container>
+    </div>
   )
 }
 

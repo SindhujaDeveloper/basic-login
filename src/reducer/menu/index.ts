@@ -11,8 +11,8 @@ import masalPonda from '../../assets/images/masal_ponda.jpeg'
 const initialState: IMenuReducer = {
   menuList: [
     { name: 'Methu Vada', count: 0, img: methuVada, price: 'Rs.5 per item' },
-    { name: 'Masal Vada', count: 0, img: masalVada, price: 'Rs.5 per item' },
-    { name: 'Masal Ponda', count: 0, img: masalPonda, price: 'Rs.5 per item' },
+    { name: 'Paruppu Vada', count: 0, img: masalVada, price: 'Rs.5 per item' },
+    { name: 'Masal Bonda', count: 0, img: masalPonda, price: 'Rs.5 per item' },
     { name: 'Cauliflower Chilly', count: 0, img: cauliflowerChilly, price: 'Rs.30 - 100g' }
     // { name: 'Logo', count: 0, img: logo, price: '0' },
     // { name: 'Logo', count: 0, img: logo, price: '0' },
