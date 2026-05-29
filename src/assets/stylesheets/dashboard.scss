@@ -20,9 +20,15 @@
 }
 
 @keyframes zoomInOut {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .whatsapp-image-container {
@@ -32,7 +38,7 @@
 }
 
 .whatsapp-label {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: var(--accent-color);
   padding: 8px 16px;
   border-radius: 20px;
@@ -85,6 +91,10 @@
 }
 
 @keyframes marquee {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }

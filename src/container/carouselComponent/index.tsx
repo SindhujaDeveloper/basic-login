@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container, Button } from 'react-bootstrap'
+import React from "react";
+import { Container, Button } from "react-bootstrap";
 
-import 'assets/stylesheets/carouselComponent.scss'
+import "assets/stylesheets/carouselComponent.scss";
 
 const CarouselComponent: React.FC = () => {
   return (
@@ -9,12 +9,25 @@ const CarouselComponent: React.FC = () => {
       <Container className="hero-content">
         <h2>Welcome to NSP FOODS</h2>
         <p>Authentic South Indian Snacks Delivered to You!</p>
-        <Button variant="light" size="lg" className="hero-btn" onClick={() => { window.scrollTo({ top: document.querySelector('.menu-container')?.getBoundingClientRect().top ?? 500, behavior: 'smooth' }) }}>
+        <Button
+          variant="light"
+          size="lg"
+          className="hero-btn"
+          onClick={() => {
+            window.scrollTo({
+              top:
+                document
+                  .querySelector(".menu-container")
+                  ?.getBoundingClientRect().top ?? 500,
+              behavior: "smooth",
+            });
+          }}
+        >
           View Menu
         </Button>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default CarouselComponent
+export default CarouselComponent;

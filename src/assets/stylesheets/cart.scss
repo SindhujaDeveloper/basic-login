@@ -1,0 +1,98 @@
+.cart-offcanvas {
+  .offcanvas-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .btn-close {
+      filter: invert(1) grayscale(100%) brightness(200%);
+    }
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+
+    .item-info {
+      display: flex;
+      flex-direction: column;
+
+      .item-name {
+        font-weight: 600;
+        color: var(--text-dark);
+      }
+
+      .item-price {
+        font-size: 0.9rem;
+        color: #666;
+      }
+    }
+
+    .item-total {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+  }
+
+  .cart-footer {
+    margin-top: auto;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+
+    .cart-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h4 {
+        margin: 0;
+        font-weight: 700;
+        color: var(--text-dark);
+      }
+
+      .total-amount {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--primary-color);
+      }
+    }
+
+    .checkout-btn {
+      width: 100%;
+      background-color: #25d366; /* WhatsApp Green */
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #128c7e;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .empty-cart {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+  }
+}

@@ -1,3 +1,3 @@
 export const Auth = {
-  login: 'success'
-}
+  login: "success",
+};

@@ -2,7 +2,11 @@
   background-color: var(--primary-color);
   color: #f8f9fa;
   padding: 60px 0 20px;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
 
 .footer-title {
@@ -33,7 +37,8 @@
     color: #b2dfdb;
   }
 
-  b, strong {
+  b,
+  strong {
     color: #fff;
     font-weight: 600;
   }
@@ -48,13 +53,13 @@
 .location-map {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-5px);
   }
-  
+
   img {
     width: 100%;
     height: auto;
@@ -66,10 +71,10 @@
 .social-media-icons {
   display: flex;
   gap: 15px;
-  
+
   .social-media-icon {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+    // border-radius: 50%;
+    // background-color: rgba(255, 255, 255, 0.1);
     padding: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -85,7 +90,7 @@
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  
+
   .copyright {
     text-align: center;
     font-size: 0.9rem;

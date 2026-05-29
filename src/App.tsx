@@ -1,21 +1,21 @@
-import React from 'react'
-import { RouterProvider } from 'react-router-dom'
-import RouterData from 'routes/appRoutes'
-import Footer from 'layout/footer'
-import Header from 'layout/header'
-import 'assets/stylesheets/common.scss'
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import RouterData from "routes/appRoutes";
+import Footer from "layout/footer";
+import Header from "layout/header";
+import "assets/stylesheets/common.scss";
 
 const App: React.FC = () => {
-  const router = RouterData()
+  const router = RouterData();
   return (
     <>
       <Header />
-      <div className='class-container'>
+      <div className="class-container">
         <RouterProvider router={router} />
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,34 +1,34 @@
-import { createSlice } from '@reduxjs/toolkit'
-import type { IAuthReducer, IActionWithPayload } from 'types'
+import { createSlice } from "@reduxjs/toolkit";
+import type { IAuthReducer, IActionWithPayload } from "types";
 
 const initialState: IAuthReducer = {
   isFetching: false,
-  error: '',
-  token: ''
-}
+  error: "",
+  token: "",
+};
 
 const authSlice = createSlice({
-  name: 'auth',
+  name: "auth",
   initialState,
   reducers: {
-    authLoginRequest: (state: IAuthReducer, action: IActionWithPayload<any>) => {
-      state.isFetching = true
-      state.error = ''
+    authLoginRequest: (state: IAuthReducer) => {
+      state.isFetching = true;
+      state.error = "";
     },
-    authLoginResponse: (state: IAuthReducer, action: IActionWithPayload<any>) => {
-      state.isFetching = false
+    authLoginResponse: (state: IAuthReducer) => {
+      state.isFetching = false;
     },
-    authLoginFailure: (state: IAuthReducer, action: IActionWithPayload<any>) => {
-      state.isFetching = false
-      state.error = action.payload.error
-    }
-  }
-})
+    authLoginFailure: (
+      state: IAuthReducer,
+      action: IActionWithPayload<any>,
+    ) => {
+      state.isFetching = false;
+      state.error = action.payload.error;
+    },
+  },
+});
 
-export const {
-  authLoginRequest,
-  authLoginResponse,
-  authLoginFailure
-} = authSlice.actions
+export const { authLoginRequest, authLoginResponse, authLoginFailure } =
+  authSlice.actions;
 
-export const authReducer = authSlice.reducer
+export const authReducer = authSlice.reducer;

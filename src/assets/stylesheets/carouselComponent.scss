@@ -7,15 +7,19 @@
 }
 
 .banner-1 {
-  padding-left: 12vw
+  padding-left: 12vw;
 }
 
 .banner {
-  padding-left: 30vw
+  padding-left: 30vw;
 }
 
 .hero-banner {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   color: var(--text-light);
   padding: 80px 20px;
   text-align: center;
